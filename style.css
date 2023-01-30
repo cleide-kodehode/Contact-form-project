@@ -1,0 +1,184 @@
+body {
+  margin: 0;
+  font-family: "Iceberg", cursive;
+}
+
+.main-form {
+  width: 100vw;
+  height: 100vh;
+  background: #201b2c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  position: relative;
+  background: #201b2c;
+  color: white;
+  height: 40px;
+  width: 80px;
+  top: 20px;
+  font-family: "Iceberg", cursive;
+  border: 1px solid white;
+  padding: 10px;
+}
+
+/* the left form area */
+
+.left-form {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.left-form h1 {
+  font-size: 3.0vw;
+  color: #ffeedd;
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
+
+.left-form p {
+  font-size: 1.4vw;
+  color: #ffeedd;
+  margin-top: 0px;
+  justify-content: right;
+  font-family: "Iceberg", cursive;
+}
+
+.icon {
+  width: 40px;
+  margin-right: 0.7rem;
+}
+
+.contact-info {
+  padding: 1.3rem 2.2rem;
+  position: relative;
+  align-items: flex-start;
+  font-family: "Iceberg", cursive;
+}
+
+.text {
+  margin: 1.5rem 0 2rem 0;
+  color: #ffeedd;
+  text-align: justify;
+}
+
+.information {
+  display: flex;
+  color: #ffeedd;
+  margin: 0.7rem 0;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+/* the right form area */
+
+.right-form {
+  width: 40vw;
+  height: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 35px;
+  background: #2f2841;
+  border-radius: 20px;
+  box-shadow: 0px 10px 40px #00000056;
+}
+
+.right-form h1 {
+  color: #ffeedd;
+  font-weight: 800;
+  margin: 0;
+}
+
+/* the textfield area */
+
+.textfield {
+  width: 100%;
+  display: flex;
+  font-family: "Iceberg", cursive;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 10px 0px;
+}
+
+.textfield > input {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  background: #ffeedd;
+  color: #100240de;
+  font-size: 12pt;
+  box-sizing: border-box;
+  font-family: "Iceberg", cursive;
+}
+
+.textfield > label {
+  color: #ffd8be;
+  margin-bottom: 10px;
+}
+
+.textfield > textarea {
+  background-color: #ffeedd;
+  border-radius: 5px;
+  font-family: "Iceberg", cursive;
+}
+
+/* the button area */
+
+.btn-submit {
+  margin-left: -20px;
+  border: none;
+  border-radius: 28px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #2b134b;
+  background-color: #ffd8be;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: #44ff00;
+}
+
+
+
+/*Responsive layout */
+
+@media only screen and (max-width: 950px) {
+  .right-form {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main-form {
+    flex-direction: column;
+  }
+
+  .left-form {
+    width: 100%;
+    height: auto;
+  }
+
+  .left-form > h1 {
+    display: none;
+  }
+
+  .right-form {
+    width: 100%;
+    height: auto;
+  }
+
+  .right-form > h1 {
+    display: none;
+  }
+}
